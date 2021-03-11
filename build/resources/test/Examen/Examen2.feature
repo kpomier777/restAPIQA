@@ -3,12 +3,12 @@ Feature: Examen
   Background: common
     Given I have access to Todo.ly
 
-  @Regression @Acceptance
+  @Projectos
   Scenario: Pregunta 1
     When I send a request POST to url http://todo.ly/api/user.json with json
     """
     {
-          "Email": "correoexamen2222@gmail.com",
+          "Email": "correoexamen222222@gmail.com",
           "FullName": "Name",
           "Password": "234"
     }
@@ -18,7 +18,7 @@ Feature: Examen
     """
     {
     "Id": "IGNORE",
-    "Email": "correoexamen2222@gmail.com",
+    "Email": "correoexamen222222@gmail.com",
     "Password": "IGNORE",
     "FullName": "Name",
     "TimeZone": 0,

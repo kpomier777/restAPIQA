@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "common",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to Todo.ly",
+            "match": {
+              "location": "runner.MyStepsClean.iHaveAccessToTodoLy()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-11T16:10:54.637Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.beforeCucumber()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Pregunta 1",
+        "description": "",
+        "id": "examen;pregunta-1",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.afterCucumber()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3876000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a request POST to url http://todo.ly/api/user.json with json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 17
+                },
+                {
+                  "val": "http://todo.ly/api/user.json",
+                  "offset": 29
+                }
+              ],
+              "location": "runner.MyStepsClean.iSendARequestPOSTToUrlHttpTodoLyApiProjectsJsonWithJson(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 9,
+              "value": "{\n      \"Email\": \"correoexamen222222@gmail.com\",\n      \"FullName\": \"Name\",\n      \"Password\": \"234\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I expected response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "runner.MyStepsClean.iExpectedResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepsClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 18,
+              "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"correoexamen222222@gmail.com\",\n\"Password\": \"IGNORE\",\n\"FullName\": \"Name\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 455000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I get the property Id save on USER_VALUE",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Id",
+                  "offset": 19
+                },
+                {
+                  "val": "USER_VALUE",
+                  "offset": 30
+                }
+              ],
+              "location": "runner.MyStepsClean.iGetThePropertyIdSaveOnID_PROJECT(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I send a request PUT to url http://todo.ly/api/user/0.json with json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUT",
+                  "offset": 17
+                },
+                {
+                  "val": "http://todo.ly/api/user/0.json",
+                  "offset": 28
+                }
+              ],
+              "location": "runner.MyStepsClean.iSendARequestPOSTToUrlHttpTodoLyApiProjectsJsonWithJson(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 37,
+              "value": "{\n      \"FullName\": \"New Name\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I expected response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "runner.MyStepsClean.iExpectedResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepsClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 44,
+              "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"kevinpomier.kp@gmail.com\",\n\"Password\": null,\n\"FullName\": \"New Name\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      }
+    ],
+    "name": "Examen",
+    "description": "",
+    "id": "examen",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Examen/Examen2.feature",
+    "tags": []
+  }
+]
