@@ -8,7 +8,7 @@ Feature: Examen
     When I send a request POST to url http://todo.ly/api/user.json with json
     """
     {
-          "Email": "correoexamen22@gmail.com",
+          "Email": "correoexamen2222@gmail.com",
           "FullName": "Name",
           "Password": "234"
     }
@@ -18,7 +18,7 @@ Feature: Examen
     """
     {
     "Id": "IGNORE",
-    "Email": "correoexamen22@gmail.com",
+    "Email": "correoexamen2222@gmail.com",
     "Password": "IGNORE",
     "FullName": "Name",
     "TimeZone": 0,
