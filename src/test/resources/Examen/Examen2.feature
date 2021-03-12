@@ -188,30 +188,23 @@ Feature: Examen
     And I get the property TokenString save on TOKEN_VALUE
     And I expected the response body
     """
-   {      "TokenString": TOKEN_VALUE,
+   {
+          "TokenString": TOKEN_VALUE,
           "UserEmail": "kevinpomier.kp@gmail.com",
           "ExpirationTime": "IGNORE"
    }
     """
-
     When I send a request DELETE to url http://todo.ly/api/authentication/token.json with json
     """
     """
     Then I expected response code 200
-    When I send a request GET to url http://todo.ly/api/authentication/token.json with json
-    """
-    """
-    Then I expected response code 200
-    And I get the property TokenString save on TOKEN_VALUE_NEW
     And I expected the response body
     """
-   {      "TokenString": TOKEN_VALUE_NEW,
+    {      "TokenString": TOKEN_VALUE,
           "UserEmail": "kevinpomier.kp@gmail.com",
           "ExpirationTime": "IGNORE"
    }
+
     """
     Then I expected response code 200
-
-
-
 
