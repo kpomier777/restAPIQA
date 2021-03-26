@@ -11,7 +11,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 4,
@@ -24,11 +23,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-11T16:10:54.637Z",
+        "start_timestamp": "2021-03-26T10:46:59.284Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1994200,
               "status": "passed"
             },
             "match": {
@@ -55,7 +54,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3876000000,
+              "duration": 1993951900,
               "status": "passed"
             },
             "line": 8,
@@ -76,12 +75,12 @@
             "keyword": "When ",
             "doc_string": {
               "line": 9,
-              "value": "{\n      \"Email\": \"correoexamen222222@gmail.com\",\n      \"FullName\": \"Name\",\n      \"Password\": \"234\"\n}"
+              "value": "{\n      \"Email\": \"nuevo2222.kp@gmail.com\",\n      \"FullName\": \"Kevin\",\n      \"Password\": \"123\"\n}"
             }
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 14930700,
               "status": "passed"
             },
             "line": 16,
@@ -99,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 6000000,
+              "duration": 3989600,
               "status": "passed"
             },
             "line": 17,
@@ -110,12 +109,12 @@
             "keyword": "And ",
             "doc_string": {
               "line": 18,
-              "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"correoexamen222222@gmail.com\",\n\"Password\": \"IGNORE\",\n\"FullName\": \"Name\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
+              "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"nuevo2222.kp@gmail.com\",\n\"Password\": \"IGNORE\",\n\"FullName\": \"Kevin\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
             }
           },
           {
             "result": {
-              "duration": 455000000,
+              "duration": 318148500,
               "status": "passed"
             },
             "line": 35,
@@ -137,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 356000000,
+              "duration": 347939800,
               "status": "passed"
             },
             "line": 36,
@@ -163,7 +162,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 42,
@@ -181,7 +179,9 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.json.JSONException: JSONObject[\"ErrorCode\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:572)\r\n\tat utilsJson.JsonHelper.areEqualJson(JsonHelper.java:20)\r\n\tat runner.MyStepsClean.iExpectedTheResponseBody(MyStepsClean.java:45)\r\n\tat ✽.I expected the response body(file:///D:/kevin/restAPIQA/src/test/resources/Examen/Examen3.feature:43)\r\n",
+              "duration": 1968000,
+              "status": "failed"
             },
             "line": 43,
             "name": "I expected the response body",
@@ -191,6 +191,63 @@
             "keyword": "And ",
             "doc_string": {
               "line": 44,
+              "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"kevinpomier.kp@gmail.com\",\n\"Password\": null,\n\"FullName\": \"New Name\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I send a request DELETE to url http://todo.ly/api/user/0.json with json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 17
+                },
+                {
+                  "val": "http://todo.ly/api/user/0.json",
+                  "offset": 31
+                }
+              ],
+              "location": "runner.MyStepsClean.iSendARequestPOSTToUrlHttpTodoLyApiProjectsJsonWithJson(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 62,
+              "value": ""
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I expected response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "runner.MyStepsClean.iExpectedResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepsClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 66,
               "value": "{\n\"Id\": \"IGNORE\",\n\"Email\": \"kevinpomier.kp@gmail.com\",\n\"Password\": null,\n\"FullName\": \"New Name\",\n\"TimeZone\": 0,\n\"IsProUser\": false,\n\"DefaultProjectId\": \"IGNORE\",\n\"AddItemMoreExpanded\": false,\n\"EditDueDateMoreExpanded\": false,\n\"ListSortType\": 0,\n\"FirstDayOfWeek\": 0,\n\"NewTaskDueDate\": -1,\n\"TimeZoneId\": \"IGNORE\"\n}"
             }
           }
@@ -206,7 +263,7 @@
     "description": "",
     "id": "examen",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Examen/Examen2.feature",
+    "uri": "file:src/test/resources/Examen/Examen3.feature",
     "tags": []
   }
 ]
