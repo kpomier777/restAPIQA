@@ -20,11 +20,11 @@ utilsJson/JsonHelper.java
  utilsJson.JsonHelper
 factoryRequest/Get.java
  factoryRequest.Get
-factoryRequest/Patch.java
- factoryRequest.Patch
+runner/MyStepsClean.java
+ runner.MyStepsClean
 unitTest/JsonCompareTest.java
  unitTest.JsonCompareTest
 configuration/Config.java
  configuration.Config
-runner/MyStepsClean.java
- runner.MyStepsClean
+factoryRequest/Patch.java
+ factoryRequest.Patch
